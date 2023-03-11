@@ -13,7 +13,7 @@ class App {
     this.middlewares();
     this.server = http.createServer(this.app); // servir iniciado pelo http
     this.io = new Server(this.server, {
-      cors: { origin: "http://localhost:3000" },
+      cors: { origin: "http://localhost:5173" },
     }); // instancia do socket.io
   }
   private middlewares() {
